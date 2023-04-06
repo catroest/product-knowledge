@@ -306,6 +306,11 @@ export const ASSETS = {
           type: 'literal',
           value: '@prefix : <urn:cx:Graph:oem:Quality> .',
         },
+        isDefinedBy: {
+          type: 'literal',
+          value:
+            'https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl',
+        },
       },
       {
         connector: {
@@ -343,6 +348,11 @@ export const ASSETS = {
           type: 'literal',
           value:
             '@prefix : <urn:cx:Graph:tierA:TraceabilityAsPlanned> .\n@prefix cx: <https://github.com/catenax-ng/product-knowledge/ontology/cx.ttl#> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n\nOemAssemblyGroup rdf:type sh:NodeShape ;\n  sh:targetClass cx:AssemblyGroup ;\n  sh:property [\n        sh:path cx:provisionedBy ;\n        sh:hasValue <bpn:legal:BPNL00000003AYRE> ;\n    ] ;\n  sh:property [\n        sh:path cx:Version ;\n        sh:hasValue 0^^xsd:long ;\n    ] ;\n  sh:property [\n        sh:path cx: ;\n        sh:class SupplierParts ;\n    ] ;\n\nSupplierParts rdf:type sh:NodeShape ;\n  sh:targetClass cx:Part ;\n  sh:property [\n        sh:path cx:isProducedBy ;\n        sh:hasValue <bpn:legal:BPNL00000003B2OM> ;\n    ] ;\n',
+        },
+        isDefinedBy: {
+          type: 'literal',
+          value:
+            'https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl',
         },
       },
       {
@@ -382,7 +392,6 @@ export const ASSETS = {
           value:
             '@prefix : <urn:cx:Graph:oem:TraceabilityAsPlanned> .\n@prefix cx: <https://github.com/catenax-ng/product-knowledge/ontology/cx.ttl#> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n\nOemAssemblyGroup rdf:type sh:NodeShape ;\n  sh:targetClass cx:AssemblyGroup ;\n  sh:property [\n        sh:path cx:provisionedBy ;\n        sh:hasValue <bpn:legal:BPNL00000003AYRE> ;\n    ] ;\n  sh:property [\n        sh:path cx:Version ;\n        sh:hasValue 0^^xsd:long ;\n    ] ;\n  sh:property [\n        sh:path cx: ;\n        sh:class SupplierParts ;\n    ] ;\n\nSupplierParts rdf:type sh:NodeShape ;\n  sh:targetClass cx:Part ;\n  sh:property [\n        sh:path cx:isProducedBy ;\n        sh:hasValue <bpn:legal:BPNL00000003B2OM> ;\n    ] ;\n',
         },
-
         isDefinedBy: {
           type: 'literal',
           value:
@@ -525,7 +534,7 @@ export const ONTOLOGIES = [
     vowl: 'https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/vowl/address_ontology.json',
     type: 'OWL',
     status: 'DRAFT',
-    version: '0.7.4',
+    version: '0.8.1',
     assets: ['', ''],
   },
   {
@@ -535,7 +544,7 @@ export const ONTOLOGIES = [
     vowl: 'https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/vowl/common_ontology.json',
     type: 'OWL',
     status: 'DRAFT',
-    version: '0.7.4',
+    version: '0.8.1',
   },
   {
     name: 'Contact Ontology',
@@ -544,7 +553,7 @@ export const ONTOLOGIES = [
     vowl: 'https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/vowl/contact_ontology.json',
     type: 'OWL',
     status: 'DRAFT',
-    version: '0.7.4',
+    version: '0.8.1',
   },
   {
     name: 'CX Ontology',
@@ -553,7 +562,7 @@ export const ONTOLOGIES = [
     vowl: 'https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/vowl/cx_ontology.json',
     type: 'OWL',
     status: 'DRAFT',
-    version: '0.7.4',
+    version: '0.8.1',
   },
   {
     name: 'Diagnosis Ontology',
@@ -562,7 +571,7 @@ export const ONTOLOGIES = [
     vowl: 'https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/vowl/diagnosis_ontology.json',
     type: 'OWL',
     status: 'DRAFT',
-    version: '0.7.4',
+    version: '0.8.1',
   },
   {
     name: 'Encoding Ontology',
@@ -571,7 +580,7 @@ export const ONTOLOGIES = [
     vowl: 'https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/vowl/encoding_ontology.json',
     type: 'OWL',
     status: 'DRAFT',
-    version: '0.7.4',
+    version: '0.8.1',
   },
   {
     name: 'Error Ontology',
@@ -580,7 +589,7 @@ export const ONTOLOGIES = [
     vowl: 'https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/vowl/error_ontology.json',
     type: 'OWL',
     status: 'DRAFT',
-    version: '0.7.4',
+    version: '0.8.1',
   },
   {
     name: 'Load Spectrum Ontology',
@@ -589,7 +598,7 @@ export const ONTOLOGIES = [
     vowl: 'https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/vowl/load_spectrum_ontology.json',
     type: 'OWL',
     status: 'DRAFT',
-    version: '0.7.4',
+    version: '0.8.1',
   },
   {
     name: 'Material Ontology',
@@ -598,7 +607,7 @@ export const ONTOLOGIES = [
     vowl: 'https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/vowl/material_ontology.json',
     type: 'OWL',
     status: 'DRAFT',
-    version: '0.7.4',
+    version: '0.8.1',
   },
   {
     name: 'Part Ontology',
@@ -607,7 +616,7 @@ export const ONTOLOGIES = [
     vowl: 'https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/vowl/part_ontology.json',
     type: 'OWL',
     status: 'DRAFT',
-    version: '0.7.4',
+    version: '0.8.1',
   },
   {
     name: 'Person Ontology',
@@ -616,7 +625,7 @@ export const ONTOLOGIES = [
     vowl: 'https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/vowl/person_ontology.json',
     type: 'OWL',
     status: 'DRAFT',
-    version: '0.7.4',
+    version: '0.8.1',
   },
   {
     name: 'Prognosis Ontology',
@@ -625,7 +634,7 @@ export const ONTOLOGIES = [
     vowl: 'https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/vowl/prognosis_ontology.json',
     type: 'OWL',
     status: 'DRAFT',
-    version: '0.7.4',
+    version: '0.8.1',
   },
   {
     name: 'Vehicle Component Ontology',
@@ -634,7 +643,7 @@ export const ONTOLOGIES = [
     vowl: 'https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/vowl/vehicle_component_ontology.json',
     type: 'OWL',
     status: 'DRAFT',
-    version: '0.7.4',
+    version: '0.8.1',
   },
   {
     name: 'Vehicle Information Ontology',
@@ -643,7 +652,7 @@ export const ONTOLOGIES = [
     vowl: 'https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/vowl/vehicle_information_ontology.json',
     type: 'OWL',
     status: 'DRAFT',
-    version: '0.7.4',
+    version: '0.8.1',
   },
   {
     name: 'Vehicle Lifecycle Ontology',
@@ -652,7 +661,7 @@ export const ONTOLOGIES = [
     vowl: 'https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/vowl/vehicle_lifecycle_ontology.json',
     type: 'OWL',
     status: 'DRAFT',
-    version: '0.7.4',
+    version: '0.8.1',
   },
   {
     name: 'Vehicle Ontology',
@@ -661,7 +670,7 @@ export const ONTOLOGIES = [
     vowl: 'https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/vowl/vehicle_ontology.json',
     type: 'OWL',
     status: 'DRAFT',
-    version: '0.7.4',
+    version: '0.8.1',
   },
   {
     name: 'Vehicle Safety Ontology',
@@ -670,7 +679,7 @@ export const ONTOLOGIES = [
     vowl: 'https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/vowl/vehicle_safety_ontology.json',
     type: 'OWL',
     status: 'DRAFT',
-    version: '0.7.4',
+    version: '0.8.1',
   },
   {
     name: 'Vehicle Usage Ontology',
@@ -679,6 +688,6 @@ export const ONTOLOGIES = [
     vowl: 'https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/vowl/vehicle_usage_ontology.json',
     type: 'OWL',
     status: 'DRAFT',
-    version: '0.7.4',
+    version: '0.8.1',
   },
 ];

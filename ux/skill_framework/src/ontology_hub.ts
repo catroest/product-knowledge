@@ -63,8 +63,7 @@ class OntologyHub implements IOntologyHub {
           const ontolgyName = ontology.name.replace('.ttl', '');
           let items: string[] = ontolgyName.split('_');
           items = items.map((item) => {
-            if (item.length < 3) return item.toUpperCase();
-            else return item.charAt(0).toUpperCase() + item.slice(1);
+            return item.charAt(0).toUpperCase() + item.slice(1);
           });
           const ontolgyTitle = items.join(' ');
           const entry: OntologyResult = {
@@ -75,7 +74,7 @@ class OntologyHub implements IOntologyHub {
               .replace('.ttl', '.json'),
             type: 'OWL',
             status: 'DRAFT',
-            version: '0.7.4',
+            version: '0.8.1',
           };
           result.push(entry);
         }

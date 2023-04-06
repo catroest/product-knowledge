@@ -1,8 +1,4 @@
-edc:
-  repo: ghcr.io/catenax-ng/product-knowledge
-  version: 0.1.2-KA-SNAPSHOT
-
-version: 0.7.4-SNAPSHOT
+version: 0.8.1-SNAPSHOT
 
 dataspace:
   bpnOem: BPNL00000003COJN
@@ -18,6 +14,7 @@ dataspace:
   publicKeyAliasCustomer: "customer-daps-crt"
   dapsClientIdCustomer: ""
   ontology: resources/dataspace.ttl
+  ontologyRef: main
   config: resources/agent.ttl
 
 ingress:
